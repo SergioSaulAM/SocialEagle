@@ -1,0 +1,59 @@
+.modal-style {
+    background-image: url("../img/blue-vector.png"), url("../img/red-vector.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top, bottom;
+}
+
+.modal-style::backdrop {
+    background-color: rgba(0,0,0,.55);
+}
+
+.modal-style {
+    width: 30%;
+    height: 70%;
+    border: none;
+    border-radius: 10px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0;
+    margin-top: 50px;
+}
+
+.modal-profile .resp_img{
+    width: 20%;
+}
+
+.modal-profile {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.modal-form {
+    margin: auto;
+    margin-top: 10px;
+    width: 80%;
+}
+
+#enviar-modal, #enviar-modal-post {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: #003770;
+}
+
+#cerrar-modal, #cerrar-modal-post {
+    background-color: #E2001A;
+}
+
+@media screen and (min-width: 330px) and (max-width: 850px) {
+    .modal-style {
+        width: 80%;
+    }
+}

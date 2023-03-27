@@ -19,6 +19,10 @@ body {
     overflow-x: hidden;
 }
 
+h2 {
+    font-size: 2.5rem;
+}
+
 main {
     padding: 80px;
 }
@@ -41,6 +45,13 @@ article {
     width: 100%;
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
+    fill: #fff;
+}
+
+.aside-icon:hover {
+    color: #0066d4;
+    fill: #0066d4;
 }
 
 ul {
@@ -79,6 +90,7 @@ aside div:nth-child(2) {
 .main_post {
     padding: 20px 50px;
     width: 100%;
+    position: relative;
 }
 
 .aside_img hr {
@@ -89,8 +101,8 @@ aside div:nth-child(2) {
 }
 
 .post_div {
-    margin: 50px;
-    width: 95%;
+    margin: 50px 0;
+    width: 100%;
 }
 
 .aside_img {
@@ -122,6 +134,7 @@ aside div:nth-child(2) {
 }
 
 .likes {
+    margin-top: 10px;
     width: 20%;
     display: flex;
     align-items: center;
@@ -131,7 +144,7 @@ aside div:nth-child(2) {
     margin-right: 8px;
 }
 
-button {
+.btn-site {
     font-size:1.2rem;
     font-family:inherit;
     width:50%;
@@ -146,7 +159,7 @@ button {
     background:rgba(226, 0, 26, 1);
 }
   
-button:hover {
+.btn-site:hover {
     background: rgba(208, 2, 27, 1);
     cursor: pointer;
 }
@@ -157,6 +170,17 @@ button:hover {
 
 .img_respo {
     display: none;
+}
+
+.options {
+    text-decoration: none;
+    position: absolute;
+    right: 7%;
+    font-size: 1.5rem;
+}
+
+.btn {
+    background-color: #E2001A;
 }
 
 @media screen and (max-width: 850px) {
@@ -206,6 +230,13 @@ button:hover {
     
     .add-post article {
         width: 65%;
+    }
+
+    .likes {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
