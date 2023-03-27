@@ -8,8 +8,9 @@ const addPostModal = document.querySelector("#add-post-modal");
 const closePostModal = document.querySelector("#cerrar-modal-post");
 const enviarPostModal = document.querySelector("#enviar-modal-post");
 
-
 const input = document.getElementsByTagName("input");
+
+const addPostRespo = document.querySelector("#add-post-respo");
 
 const limpiar = (target) => {
     if (target.value !== "") {
@@ -39,4 +40,8 @@ closePostModal.addEventListener("click", () => {
 
 enviarPostModal.addEventListener("click", () => {
     addPostModal.close()
+})
+
+addPostRespo.addEventListener("click", () => {
+    addPostModal.showModal()
 })
