@@ -50,6 +50,7 @@
 
 #cerrar-modal, #cerrar-modal-post {
     background-color: #E2001A;
+    width: 55px;
 }
 
 @media screen and (min-width: 330px) and (max-width: 1440px) {
